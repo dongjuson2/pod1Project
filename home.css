@@ -1,0 +1,144 @@
+/* Color Scheme Options
+Primary: #9f9149
+Secondary: #49579f
+Tertiary: #98a1d0
+
+Primary: #4ea3d9
+Secondary: #d9844e
+Tertiary: #f0cdb7 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:"sans-serif";
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+      background-color: Black;
+      overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: center;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #0e2981;
+      color: white;
+    }
+    
+  
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      background: white;
+      height: 100%;
+    }
+    h1 {
+      color: black;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom:10px;
+      text-align: center;
+    }
+    
+    p {
+      font-size:  25px;
+      font: weight 100;
+      color:black;
+      margin-bottom: 250px;
+      text-align: center;
+    }
+    
+    section {
+      text-align: center;
+    }
+    
+    button {
+      border: none;
+      background: #98a1d0;
+      padding: 12px 35px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+  
+    /* home page */
+  .wrapper {
+      display: inline-grid;
+      grid-template-columns: 100vw;
+  }
+      
+  .center {
+      display: block;
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 75%;
+  }
+  
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    /* text-align: center; */
+    /* color: Black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+  }
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    font-size:  85px;
+    font: weight 700;
+    color:white;
+    margin-bottom: 250px;
+    text-align: center;
+  }
+  
+  .para {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    margin-right: 10vh;
+  
+  }
+  
+  .para h3 {
+    width: 50%;
+    color: black;
+    font-size: 75px;
+    font-weight: 700;
+    
+  }
+  
+  .shak {
+      display: flex;
+      justify-content: center;
+      margin-top: 3vw;
+  
+  }
+   
+  
