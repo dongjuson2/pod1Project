@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+   </script>
+    <title>Meet the Team</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <script> 
+        $(document).ready(function() {
+        $('#menu-toggle, #menu > ul > li > a').click(function(e) { 
+            var $toggle = $(this); 
+            var $menu = $('#' + $(this).attr('aria-controls')); 
+        
+            if ($menu.attr('aria-hidden') == 'true') {
+                $('body').addClass('open');
+                $menu.attr('aria-hidden', 'false');
+                $toggle.attr('aria-expanded', 'true');
+            }
+            else if ($menu.attr('aria-hidden') == 'false') {
+                $('body').removeClass('open');
+                $menu.attr('aria-hidden', 'true');
+                $toggle.attr('aria-expanded', 'faremove'); 
+            }
+        });
+      });
+      </script>
+      
+      <!-- Navbar-->
+        <header class="banner">
+            <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"></button>
+        </header>
+          
+          <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
+          <ul>
+            <li><a href="navbar.html">Welcome</a></li>
+            <li><a href="home.html"> What we do</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </nav>
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/>
+          <image href="machu.jpg"></image>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Machu Picchu</h1>
+            <p>"Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it’s renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery."</p>
+            <p><a class="btn btn-lg btn-primary" href="https://en.wikipedia.org/wiki/Machu_Picchu" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/>
+          <image href="tahiti.jpg"></image>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Tahiti</h1>
+            <p>"Tahiti is the largest island in French Polynesia, the South Pacific archipelago. Shaped like a figure-8, it's divided into Tahiti Nui (the larger, western section) and Tahiti Iti (the eastern peninsula). With black-sand beaches, lagoons, waterfalls and 2 extinct volcanoes, it's a popular vacation destination. Explored by Captain James Cook in the 18th century, it was also often painted by French artist Paul Gauguin."</p>
+            <p><a class="btn btn-lg btn-primary" href="https://en.wikipedia.org/wiki/Tahiti" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/>
+          <image href="grandCanyon.jpg"></image>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Grand Canyon</h1>
+            <p>"The Grand Canyon in Arizona is a natural formation distinguished by layered bands of red rock, revealing millions of years of geological history in cross-section. Vast in scale, the canyon averages 10 miles across and a mile deep along its 277-mile length. Much of the area is a national park, with Colorado River white-water rapids and sweeping vistas."</p>
+            <p><a class="btn btn-lg btn-primary" href="https://en.wikipedia.org/wiki/Grand_Canyon" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Michael's Tesla"><title>Michael's Tesla</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="tesla.jpg" width="140" height="140"/>
+        </svg>
+        <h2>Michael's Tesla</h2>
+        <p>We are sponsored by Michael's Tesla! Big thanks to Michael!</p>
+        <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Tesla,_Inc.#Vehicle_models" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Elena's Horse"><title>Elena's Horse</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="horse.jpg" width="140" height="140"/>
+        </svg>
+        <h2>Elena's Horse</h2>
+        <p>Truly a gallant stallion. Shoutout to Elena's Horse!</p>
+        <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Horse" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Ric Elias"><title>Ric Elias</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="ric.jpg" width="140" height="140"/>
+        </svg>
+        <h2>Ric Elias</h2>
+        <p>The man, the myth, the legend himself. Thank you Ric!</p>
+        <p><a class="btn btn-secondary" href="https://www.ted.com/speakers/ric_elias" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Axel Sandoval <br> <span class="text-muted">Head of Music Management</span></h2>
+        <p class="lead">I was born in the Sahara Dessert. My parents are Elon Musk and Selena Gomez. I am 25 years old and have a passion for traveling. I have been all over the world but I continue to pursue new locations and breathtaking sites. The one place I haven't visited but wish to is the Great Wall of China.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="axelS.jpg" width="330" height="400" alt="Axel">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Brayan Castro <br> <span class="text-muted">Head of Development</span></h2>
+        <p class="lead">My name is Brayan Castro, and I am a current student at Rhodes College. I have always had a passion for traveling. Due to my status, I have only been able to travel throughout the States. I have met and created strong relationships with people thanks to travel. I one day hope to travel the world and meet new people from all over the place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="brayanC.jpg" width="360" height="400" alt="Brayan">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Dongju Son <br> <span class="text-muted">Head of Marketing</span></h2>
+        <p class="lead">My name is Dongju Son, and I am a currently the CEO of uproses, a non-profit t-shirt company that gives back to the community. Born in Seoul, South Korea, I moved to the United States at the young age of five. Since then, I have traveled to five continents and over thirty countries, all the way from the tropical rainforests of South Asia to deadly heat of the Sahara.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="dongjuS.jpg" width="400" height="400" alt="Dongju">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Evelyn Enriquez <br> <span class="text-muted">Head of Marketing</span></h2>
+        <p class="lead">My name is Evelyn Enriquez. I am fortunate enough to have traveled throughout the US. My favorite state to visit was Wyoming - the vibes were immaculate! I wish to visit the One Direction music video locations in the UK!</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="evelynE.jpg" width="340" height="400" alt="Evelyn">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Roberto Lazcano <br> <span class="text-muted">Head of Sponsorship</span></h2>
+        <p class="lead">My name is Roberto Lazcano and I am a nomad at heart. My travels have taken me throughout Mexico and the US. In the future I would love to travel throughout South America and Asia. I invite you to join me.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="robertoL.png" width="400" height="330" alt="Roberto">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; All Rights Reserved to Pod 1 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script></body>
+</html>
