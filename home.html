@@ -5,20 +5,74 @@
     <meta name="viewport" content="width=device-width", initial-scale=1.0>
     <title>GDS Project</title>
     <link rel="stylesheet" type="text/css" href="home.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+  </script>
+    <style>
+        img {
+        border-radius: 10px;
+        }
+
+        #myDIV { 
+        border: 2px transparent;
+        width: 75vw;
+        height: 100px;    
+        animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+        50% {font-size: 75px;}
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="center"><h1 style="font-size: 1000%;">A Traveler's Tales</h1></div>
+    <script> 
+  $(document).ready(function() {
+  $('#menu-toggle, #menu > ul > li > a').click(function(e) { 
+      var $toggle = $(this); 
+      var $menu = $('#' + $(this).attr('aria-controls')); 
+  
+      if ($menu.attr('aria-hidden') == 'true') {
+          $('body').addClass('open');
+          $menu.attr('aria-hidden', 'false');
+          $toggle.attr('aria-expanded', 'true');
+      }
+      else if ($menu.attr('aria-hidden') == 'false') {
+          $('body').removeClass('open');
+          $menu.attr('aria-hidden', 'true');
+          $toggle.attr('aria-expanded', 'faremove'); 
+      }
+  });
+});
+</script>
+
+<!-- Navbar-->
+  <header class="banner">
+      <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"></button>
+              
     </header>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact Us </a>
-    </div>
+    
+    <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
+    <ul>
+      <li><a href="navbar.html">Welcome</a></li>
+      <li><a href="home.html"> What we do</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+<!-- Navbar-->
+
+    <header>
+        <div id="myDIV" class="title"><h1 style="font-variant: small-caps;";></h1>A Traveler's Tales</h1></div>
+    </header>
     
     <div class="wrapper">
         <div class="container">
+            
+            <img src="img/world.jpg" alt="wd" style="height:200px;">
             <img src="img/hero.jpg" alt="Pod 1 Trekkers" class="center">
+            <img src="img/world.jpg" alt="wd" style="height:200px;">
             
             <div class="centered">
                 <h2 class="center" ><p style="font-family: fantasy">
@@ -27,24 +81,42 @@
         </div>
         
         <div class="para">
+            <img src="img/mexico.jpeg" alt="Mex" style="width:300px;height:200px;">
             <h3>Income should not determine your exposure to the many wonders of the world. Traveling does not have to hurt your wallet. Most of all do not leave for the tomorrow what you could easily experience today.</h3>
-            <img src="img/mexico.jpeg" alt="Mex" style="width:1000px;height:800px;">
+            <img src="img/mexico2.jpg" alt="Mex" style="width:300px;height:200px;">
          </div>
        
-         <div class="para para-right">
-            <img src="img/sk.jpeg" alt="SK" style="width:1000px;height:800px;">
+         <div class="para1">
+            <img src="img/sk.jpeg" alt="SK" style="width:400px;height:200px;" >
             <h3>Pod 1 travel site will provide you with all the information you need to visit some of the most beautiful places in the world. Places full of culture and wonders of the world.</h3>
         </div>
-        
+
+        <div class="para">
+            <img src="img/skvillage2.jpeg" alt="skvill2" style="width:300px;height:200px;">
+            <h3>If you’re planning to travel to South Korea and would like to visit authentic and traditional cities, I strongly recommend you visit the city of Andong. You can also visit the beautiful folk village of Hahoe which is about 30 kilometers from Andong</h3>
+            <img src="img/skvillage1.jpeg" alt="skvill1" style="width:300px;height:200px;">
+         </div>
+         <div class="para1">
+            <img src="img/ecuador2.jpeg" alt="SK" style="width:400px;height:200px;" >
+            <h3>Ecuador is nestled between Colombia and Peru on the Pacific side of South America. Traveling around Ecuador is a beautiful experience. The food is incredible, there are lots of mountains and people are extremely nice. Adventure lovers will love to explore the Ecuadorian Amazon or to climb one of the country’s many volcanoes while other travelers can enjoy the sun of the coast between two surfing lessons.</h3>
+        </div>
+        <div class="para">
+            <img src="img/pakistan1.jpeg" alt="Pak1" style="width:300px;height:200px;">
+            <h3>Pakistan is blessed with four seasons, it depends upon travelers’ mood and nature what he/she wants to explore, in  Winters coastal line of Pakistan is the best time to explore natural beaches. On way to the coastal highway, you will find the calm and beautiful beaches among all others in the world. You are snow lover then Northern areas of Pakistan in winters from December to March are in a category where heavy snowfalls each year. South and central Punjab had a unique cultural ambiance for cultural and food lovers, it’s unique in the world.</h3>
+            <img src="img/pakistan2.jpeg" alt="Pak2" style="width:300px;height:200px;">
+         </div>
+       
+       
          <div class="shak">
-            <img src="img/quote1.jpg" alt="Shakespeare">
+            <img src="img/quote1.jpg" alt="Shakespeare" style="width:400px;height:250px;">
+         </div>
+         <div class="shak">
+             <h3>Listen to Shakespeare and make the world your playground!!!</h3>
          </div>
          
     </div>
-    
    
-    <footer>&copy;2020, Pod 1</footer>
-    </main> 
+     <footer>&copy;All Rights Reserved to Pod 1</footer>
 </body>
 
 </html>
