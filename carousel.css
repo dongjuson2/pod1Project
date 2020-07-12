@@ -1,0 +1,221 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 0;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;  
+}
+
+button:focus {
+  outline: none;
+}
+
+/* THAT FIXED HEADER */
+header.banner {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+/* MENU TOGGLE ICON (makes + turn to x )*/
+#menu-toggle {
+  position: relative;
+
+  width: 51px;
+  height: 51px;
+
+  cursor: pointer;
+
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
+  background: transparent;
+}
+#menu-toggle:before,
+#menu-toggle:after {
+  position: absolute;
+
+  content: "";
+  content: "";
+  -webkit-transition: all .350s ease;
+     -moz-transition: all .350s ease;
+       -o-transition: all .350s ease;
+          transition: all .350s ease;
+
+  background-color: #fff;
+}
+
+#menu-toggle:before {
+  top: 12px;
+  left: 25px;
+
+  width: 1px;
+  height: 27px;
+}
+#menu-toggle:after {
+  top: 25px;
+  left: 12px;
+
+  width: 27px;
+  height: 1px;
+}
+#menu-toggle:hover:before,
+#menu-toggle:hover:after {
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+.open #menu-toggle:before,
+.open #menu-toggle:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* OVERLAY MENU */
+#menu {
+z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  display: table;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Lora", serif;
+
+  transition: opacity .5s, visibility .5s;
+  text-align: center;
+
+  opacity: 0;
+  background-color: black;
+}
+.open #menu {
+z-index: 2;
+  visibility: visible;
+
+  opacity: 1;
+}
+#menu ul {
+  display: table-cell;
+  padding: 0;
+  margin-top: 30px;
+
+  list-style: none;
+
+  vertical-align: middle;
+}
+
+#menu ul li a {
+  display: block;
+
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 80px;
+
+  -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+       -o-transition: all .3s ease;
+          transition: all .3s ease;
+  text-decoration: none;
+
+  color: #fff;
+}
+#menu ul li a:hover {
+  font-size: 30px;
+}

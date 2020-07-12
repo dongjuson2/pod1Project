@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <script> 
+            $(document).ready(function() {
+            $('#menu-toggle, #menu > ul > li > a').click(function(e) { 
+                var $toggle = $(this); 
+                var $menu = $('#' + $(this).attr('aria-controls')); 
+            
+                if ($menu.attr('aria-hidden') == 'true') {
+                    $('body').addClass('open');
+                    $menu.attr('aria-hidden', 'false');
+                    $toggle.attr('aria-expanded', 'true');
+                }
+                else if ($menu.attr('aria-hidden') == 'false') {
+                    $('body').removeClass('open');
+                    $menu.attr('aria-hidden', 'true');
+                    $toggle.attr('aria-expanded', 'faremove'); 
+                }
+            });
+          });
+        </script>
+          
+          <!-- Navbar-->
+            <header class="banner">
+                <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"></button>
+                        
+            </header>
+              
+              <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
+              <ul>
+                <li><a href="navbar.html">Welcome</a></li>
+                <li><a href="home.html"> What we do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              </nav>
+    </header>
+
+<div class="container-img">
+  <img src="https://images.unsplash.com/photo-1519405530001-3b5e82ba4dac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=6o" alt="Mountains" class="img" style="width:100%;">
+  <div class="centered">Contact Us!<br>We're ready to help you go on your next adventure!</div>
+  </div>
+<div class="container">
+    <section class="main">
+        <div class="form-area">
+        <form action="" method="post" class="myform">
+            <label for="name">Name:</label>
+            <br>
+            <input id="name" type="text" required>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input id="email" type="email:" required>
+            <br>
+            <label for="number">Phone Number:</label>
+            <br>
+            <input id="number" type="text">
+            <br>
+            <label for="request">How can we help?</label>
+            <br>
+            <textarea cols="40" rows="4" wrap="hard" id="request"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+       </form>
+       </div>
+    </section>
+</div>
+
+<header>
+    <p>&copy; All Rights Reserved to Pod 1</p>
+</header>
+</body>
+</html>
+
+
