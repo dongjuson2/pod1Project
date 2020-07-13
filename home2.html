@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
+    <title>a traveler's tales</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet">
+  </head>
+  <body>
+    <script> 
+      $(document).ready(function() {
+      $('#menu-toggle, #menu > ul > li > a').click(function(e) { 
+          var $toggle = $(this); 
+          var $menu = $('#' + $(this).attr('aria-controls')); 
+      
+          if ($menu.attr('aria-hidden') == 'true') {
+              $('body').addClass('open');
+              $menu.attr('aria-hidden', 'false');
+              $toggle.attr('aria-expanded', 'true');
+          }
+          else if ($menu.attr('aria-hidden') == 'false') {
+              $('body').removeClass('open');
+              $menu.attr('aria-hidden', 'true');
+              $toggle.attr('aria-expanded', 'faremove'); 
+          }
+      });
+    });
+    </script>
+    
+    <!-- Navbar-->
+      <header class="banner">
+          <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"></button>
+      </header>
+        <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
+        <ul>
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="home2.html"> What We Do</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    <!-- Navbar-->
+
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>a traveler's tales</h1>
+      <br>
+      <p class="lead text-muted">If you love traveling than this is the site to be in. Pod 1 will provide you with the traveling information you need to discover the world.</p>
+      <hr class="featurette-divider">
+      <p class="lead text-muted">Income should not determine your exposure to the many wonders of the world. Traveling does not have to hurt your wallet. Most of all do not leave for the tomorrow what you could easily experience today.</p>
+      <hr class="featurette-divider">
+      <p class="lead text-muted">Pod 1 travel site will provide you with all the information you need to visit some of the most beautiful places in the world. Places full of culture and wonders of the world.</p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Korea</title><rect width="100%" height="100%" fill="#55595c"/>
+              <image href="img/skvillage1.jpeg" width="100%" height="100%"></image>
+            </svg>
+            <div class="card-body">
+              <p class="card-text">If you’re planning to travel to South Korea and would like to visit authentic and traditional cities, I strongly recommend you visit the city of Andong. You can also visit the beautiful folk village of Hahoe which is about 30 kilometers from Andong.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Ecuador"><title>Ecuador</title><rect width="100%" height="100%" fill="#55595c"/>
+              <image href="img/ecuador2.jpeg" width="100%" height="100%"></image>
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Ecuador is nestled between Colombia and Peru on the Pacific side of South America. Traveling around Ecuador is a beautiful experience. The food is incredible, there are lots of mountains and people are extremely nice. Adventure lovers will love to explore the Ecuadorian Amazon or to climb one of the country’s many volcanoes while other travelers can enjoy the sun of the coast between two surfing lessons.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Pakistan"><title>Pakitstan</title><rect width="100%" height="100%" fill="#55595c"/>
+              <image href="img/pakistan1.jpeg" width="100%" height="100%"></image>
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Pakistan is blessed with four seasons, it depends upon travelers’ mood and nature what he/she wants to explore, in  Winters coastal line of Pakistan is the best time to explore natural beaches. You are snow lover then Northern areas of Pakistan in winters from December to March are in a category where heavy snowfalls each year. South and central Punjab had a unique cultural ambiance for cultural and food lovers, it’s unique in the world.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>&copy; All Rights Reserved to Pod 1 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="css/bootstrap.bundle.js"></script></body>
+</html>

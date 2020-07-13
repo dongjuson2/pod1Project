@@ -19,7 +19,8 @@
 
 
   body {
-    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin: 0;
     padding: 0;
   }
@@ -67,7 +68,7 @@
     position: relative;
 
 
-     background-color: var(--colour-white); 
+    background-color: var(--colour-white); 
     
 
     display: flex;
@@ -101,10 +102,10 @@
     position: relative;
 
 
-    background-image: url(evelyn.jpg);
+    background-image: url(img/evelyn.jpg);
     background-size: contain;
-        background-repeat: no-repeat;
-background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -127,7 +128,7 @@ background-position: center;
     position: relative;
 
 
-    background-image: url(dongju.jpg);
+    background-image: url(img/dongju.jpg);
     background-size: contain;
 
     display: flex;
@@ -149,7 +150,7 @@ background-position: center;
         position: relative;
     
     
-        background-image: url(brayan.jpg);
+        background-image: url(img/brayan.jpg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -175,7 +176,7 @@ background-position: center;
     position: relative;
 
 
-    background-image: url(axel.jpg);
+    background-image: url(img/axel.jpg);
     background-size: contain;
 
     display: flex;
@@ -198,7 +199,7 @@ background-position: center;
     position: relative;
 
 
-    background-image: url(roberto.jpg);
+    background-image: url(img/roberto.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -284,10 +285,7 @@ background-position: center;
   }
   /* texts position */
 
-  
-  
-
-  body {
+body {
     width: 100%;
     height: 100%;
     margin: 0;  
@@ -367,28 +365,27 @@ header.banner {
 /* OVERLAY MENU */
 #menu {
   z-index: 1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 
-    display: table;
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
+  display: table;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
 
-    font-family: "Lora", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    transition: opacity .5s, visibility .5s;
-    text-align: center;
+  transition: opacity .5s, visibility .5s;
+  text-align: center;
 
-    opacity: 0;
-    background-color: black;
+  opacity: 0;
+  background-color: rgb(0, 0, 0);
 }
 .open #menu {
-  z-index: 2;
+    z-index: 2;
     visibility: visible;
-
-    opacity: 1;
+    opacity: 0.8;
 }
 #menu ul {
     display: table-cell;
@@ -428,10 +425,6 @@ footer {
     min-width: 200px;
     padding: 0px 0px;
   }
-
-
-
-
 
 @media only screen and (min-width: 40rem) {
   body {

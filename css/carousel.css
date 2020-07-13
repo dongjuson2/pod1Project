@@ -167,7 +167,7 @@ header.banner {
 
 /* OVERLAY MENU */
 #menu {
-z-index: 1;
+  z-index: 1;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -177,19 +177,19 @@ z-index: 1;
   width: 100%;
   height: 100%;
 
-  font-family: "Lora", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   transition: opacity .5s, visibility .5s;
   text-align: center;
 
   opacity: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .open #menu {
-z-index: 2;
+  z-index: 2;
   visibility: visible;
 
-  opacity: 1;
+  opacity: 0.8;
 }
 #menu ul {
   display: table-cell;
