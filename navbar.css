@@ -302,7 +302,6 @@ header.banner {
     position: fixed;
     top: 0;
     z-index: 100;
-
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
@@ -452,4 +451,5 @@ footer {
   --base-grid: 9px;
   --colour-white: #fff;
   --colour-black: #1a1a1a;
+}
 }
