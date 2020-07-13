@@ -1,5 +1,5 @@
 :root {
-    --base-grid: 9px;
+    --base-grid: 4.6px;
     --colour-white: #fff;
     --colour-black: #1a1a1a;
   }
@@ -11,7 +11,9 @@
     html {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(-170deg,#064997 20%,#105ba7);
+    /*background-image: linear-gradient(-170deg,#064997 20%,#105ba7);*/
+
+    background-image: url(https://wallpaperaccess.com/full/185289.jpg);
     background-position: 100%;
   }
 
@@ -281,6 +283,8 @@ background-position: center;
     }
   }
   /* texts position */
+
+  
   
 
   body {
@@ -379,7 +383,7 @@ header.banner {
     text-align: center;
 
     opacity: 0;
-    background-color: rgba(0, 0, 0, .85);
+    background-color: black;
 }
 .open #menu {
   z-index: 2;
@@ -414,4 +418,38 @@ header.banner {
 }
 #menu ul li a:hover {
     font-size: 30px;
+}
+
+footer { 
+  position: absolute;
+    left: 30px;
+    bottom: 10px;
+    z-index: 100;
+    max-width: 550px;
+    min-width: 200px;
+    padding: 0px 0px;
+  }
+
+
+
+
+
+@media only screen and (min-width: 40rem) {
+  body {
+    background-image: url(https://wallpaperaccess.com/full/185289.jpg)
+  }
+  :root {
+    --base-grid: 9px;
+    --colour-white: #fff;
+    --colour-black: #1a1a1a;
+  }
+}
+@media only screen and (min-width: 60rem) {
+ body {
+  background-image: url(https://wallpaperaccess.com/full/185289.jpg)
+}
+:root {
+  --base-grid: 9px;
+  --colour-white: #fff;
+  --colour-black: #1a1a1a;
 }
