@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0>
-    <title>GDS Project</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <script
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Traveler's Tales</title>
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+  <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous">
   </script>
-    <style>
-        img {
-        border-radius: 10px;
-        }
 
-        #myDIV { 
-        border: 2px transparent;
-        width: 75vw;
-        height: 100px;    
-        animation: mymove 5s infinite;
-        }
 
-        @keyframes mymove {
-        50% {font-size: 75px;}
-        }
-    </style>
+
+
+
+
+
+
+
+
+
+
+
 </head>
+
+
 <body>
-    <script> 
+  
+    <div style="background-image: url(https://wallpaperaccess.com/full/185289.jpg);
+    background-position: center;
+    background-size: cover;"
+    >
+
+<script> 
   $(document).ready(function() {
   $('#menu-toggle, #menu > ul > li > a').click(function(e) { 
       var $toggle = $(this); 
@@ -56,67 +62,62 @@
     
     <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
     <ul>
-      <li><a href="navbar.html">Welcome</a></li>
+      <li><a href="index.html">Welcome</a></li>
       <li><a href="home.html"> What we do</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     </nav>
 <!-- Navbar-->
+ 
 
-    <header>
-        <div id="myDIV" class="title"><h1 style="font-variant: small-caps;";></h1>A Traveler's Tales</h1></div>
-    </header>
-    
-    <div class="wrapper">
-        <div class="container">
+    <div class="links">
+        <ul class="links__list" style="--item-total:5">
+          <li class="links__item" style="--item-count:1" >
+            <a class="links__link" href="meetTeam.html">
+              <svg class="links__icon1" viewBox="0 0 32 32">
+                 
+              </svg>
+              <span class="links__text">Evelyn</span>
+            </a>
+          </li>
+          <li class="links__item" style="--item-count:2">
+            <a class="links__link" href="meetTeam.html">
+              <svg class="links__icon2" viewBox="0 0 31 32">
             
-            <img src="img/world.jpg" alt="wd" style="height:200px;">
-            <img src="img/hero.jpg" alt="Pod 1 Trekkers" class="center">
-            <img src="img/world.jpg" alt="wd" style="height:200px;">
+              </svg>
+              <span class="links__text">Dongju</span></a>
+          </li>
+          <li class="links__item" style="--item-count:3">
+            <a class="links__link" href="meetTeam.html">
+              <svg class="links__icon3" viewBox="0 0 32 32">
+                
+              </svg>
+              <span class="links__text">Brayan</span></a>
+          </li>
+          <li class="links__item" style="--item-count:4">
+            <a class="links__link" href="meetTeam.html">
+              <svg class="links__icon4" viewBox="0 0 32 32">
+               
+              </svg>
+              <span class="links__text">Axel</span></a>
+          </li>
+          
+          <li class="links__item" style="--item-count:5">
             
-            <div class="centered">
-                <h2 class="center" ><p style="font-family: fantasy">
-                If you love traveling than this is the site to be in. Pod 1 will provide you with the traveling information you need to discover the world.</p></h2>
-            </div>
-        </div>
+            <a class="links__link" href="meetTeam.html">
+              <svg class="links__icon5" viewBox="0 0 22 32">
+               
+              </svg>
+              <span class="links__text"> Roberto</span></a>
+          </li>
+        </ul>
         
-        <div class="para">
-            <img src="img/mexico.jpeg" alt="Mex" style="width:300px;height:200px;">
-            <h3>Income should not determine your exposure to the many wonders of the world. Traveling does not have to hurt your wallet. Most of all do not leave for the tomorrow what you could easily experience today.</h3>
-            <img src="img/mexico2.jpg" alt="Mex" style="width:300px;height:200px;">
-         </div>
-       
-         <div class="para1">
-            <img src="img/sk.jpeg" alt="SK" style="width:400px;height:200px;" >
-            <h3>Pod 1 travel site will provide you with all the information you need to visit some of the most beautiful places in the world. Places full of culture and wonders of the world.</h3>
-        </div>
+      </div>
 
-        <div class="para">
-            <img src="img/skvillage2.jpeg" alt="skvill2" style="width:300px;height:200px;">
-            <h3>If you’re planning to travel to South Korea and would like to visit authentic and traditional cities, I strongly recommend you visit the city of Andong. You can also visit the beautiful folk village of Hahoe which is about 30 kilometers from Andong</h3>
-            <img src="img/skvillage1.jpeg" alt="skvill1" style="width:300px;height:200px;">
-         </div>
-         <div class="para1">
-            <img src="img/ecuador2.jpeg" alt="SK" style="width:400px;height:200px;" >
-            <h3>Ecuador is nestled between Colombia and Peru on the Pacific side of South America. Traveling around Ecuador is a beautiful experience. The food is incredible, there are lots of mountains and people are extremely nice. Adventure lovers will love to explore the Ecuadorian Amazon or to climb one of the country’s many volcanoes while other travelers can enjoy the sun of the coast between two surfing lessons.</h3>
-        </div>
-        <div class="para">
-            <img src="img/pakistan1.jpeg" alt="Pak1" style="width:300px;height:200px;">
-            <h3>Pakistan is blessed with four seasons, it depends upon travelers’ mood and nature what he/she wants to explore, in  Winters coastal line of Pakistan is the best time to explore natural beaches. On way to the coastal highway, you will find the calm and beautiful beaches among all others in the world. You are snow lover then Northern areas of Pakistan in winters from December to March are in a category where heavy snowfalls each year. South and central Punjab had a unique cultural ambiance for cultural and food lovers, it’s unique in the world.</h3>
-            <img src="img/pakistan2.jpeg" alt="Pak2" style="width:300px;height:200px;">
-         </div>
-       
-       
-         <div class="shak">
-            <img src="img/quote1.jpg" alt="Shakespeare" style="width:400px;height:250px;">
-         </div>
-         <div class="shak">
-             <h3>Listen to Shakespeare and make the world your playground!!!</h3>
-         </div>
-         
-    </div>
-   
-     <footer>&copy;All Rights Reserved to Pod 1</footer>
+    
+      <footer>
+        <p>&copy; All Rights Reserved to Pod 1</p>
+      </footer>
+
 </body>
-
 </html>
